@@ -1,0 +1,54 @@
+2025-03-10 21:30:48.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-03-10 21:30:48
+Temperature       : 23.4 degC
+Humidity          : 28.9 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA _Test_Only.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I90:ﾕﾆｯﾄ電源ON 21:30:49
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+I10:電圧確認テスト 21:30:52
+**************************************************
+
+5_2V_電源電圧 測定 =========
+Send : TS,0900,2,5DB4,7287
+Recv : OK,1900,6BEC
+TSCommand Recv ERR
+TSCommand Recv ERR
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : TSCommand Recv ERR
+Inspection Time  : 00:08:00
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

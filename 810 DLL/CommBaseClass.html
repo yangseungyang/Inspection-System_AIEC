@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.3.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE></TITLE>
+<LINK rel="stylesheet" href="table.css" type="text/css" id="_HPB_TABLE_CSS_ID_">
+</HEAD>
+<BODY>
+<H1>共通通信クラス</H1>
+<H2>１．定数</H2>
+<H2>２．プロパティ</H2>
+<H2>３．メソッド一覧</H2>
+<CENTER>
+<TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_060202144135" class="hpb-cnt-tb1" width="733">
+  <TBODY>
+    <TR>
+      <TH class="hpb-cnt-tb-th1" width="26" height="25">No</TH>
+      <TH class="hpb-cnt-tb-th1" align="center" height="25" width="106">メソッド名</TH>
+      <TH class="hpb-cnt-tb-th1" align="center" height="25" width="238">機能</TH>
+      <TH class="hpb-cnt-tb-th1" align="center" height="25" width="169">戻り値</TH>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" width="26" align="center" height="22">1</TD>
+      <TD class="hpb-cnt-tb-cell2" align="left" height="22" width="106"><A href="#open">Ｏｐｅｎ</A></TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="238">通信ポートを開きます。</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="169"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" width="26" height="22" align="center">2</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" align="left" width="106"><A href="#close">Ｃｌｏｓｅ</A></TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="238">通信ポートを閉じます。</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="169"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" width="26" height="22" align="center">3</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" align="left" width="106"><A href="#read">Ｒｅａｄ</A></TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="238">データを受信します。</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="169"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" width="26" height="22" align="center">4</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" align="left" width="106"><A href="#write">Ｗｒｉｔｅ</A></TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="238">データを送信します。</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="169"></TD>
+    </TR>
+    <TR>
+      <TD class="hpb-cnt-tb-cell1" height="22" align="center">5</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" align="left" width="106"><A href="#settimeout">ＳｅｔＴｉｍｅｏｕｔ</A></TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="238">送受信のタイムアウト時間を設定します。</TD>
+      <TD class="hpb-cnt-tb-cell2" height="22" width="169"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<BLOCKQUOTE>
+<H3><A name="open"></A>Ｏｐｅｎ（ＢｙＶａｌ　ｐａｒａｍ　Ａｓ　Ｓｔｒｉｎｇ）　Ａｓ　Ｉｎｔｅｇｅｒ</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>機能</B>：通信ポートを開きます。<BR>
+<BR>
+<B>引数</B>：pram<BR>
+　　GPIB(通測NI社製)<BR>
+　　　アドレス　=　”１”～”３２”<BR>
+　　RS232C(通測)　=　”ポート番号，ボーレート，ビット仕様，ハンドシェーク”<BR>
+　　　ポート番号<BR>
+　　　　COM1　=　0<BR>
+　　　　COM2　=　１<BR>
+　　　　COM3　=　2<BR>
+　　　　COM4　=　3<BR>
+　　　ボーレート<BR>
+　　　　1200　=　0<BR>
+　　　　2400　=　1<BR>
+　　　　4800　=　2<BR>
+　　　　9600　=　3<BR>
+　　　　19200　=　4<BR>
+　　　　38400　=　5<BR>
+　　　　57600　=　6<BR>
+　　　ビット仕様<BR>
+　　　　ストップビット8，ノンパリティ，ストップビット1　=　0<BR>
+　　　　ストップビット7，奇数パリティ，ストップビット1　=　1<BR>
+　　　　ストップビット7，偶数パリティ，ストップビット1　=　2<BR>
+　　　ハンドシェーク<BR>
+　　　　無し　=　0<BR>
+　　　　XonXoff　=　1<BR>
+　　　　CTS-RTS　=　2<BR>
+　　Ether(通測)　=　”サーバー名，ユーザー名，パスワード”<BR>
+　　　サーバー名　=　通測の測定器のサーバー名，又は、IPアドレス<BR>
+　　　ユーザー名　=　ユーザー名<BR>
+　　　パスワード　=　パスワード<BR>
+　　　※ユーザー名，パスワードの指定が無くても、”，”の省略は不可<BR>
+　　USB(通測)<BR>
+　　　アドレス　=　”1”～”127”<BR>
+<BR>
+<B>戻り値</B>：<BR>
+　　COMM_OK　=　正常終了<BR>
+　　COMM_ERROR_OPEN　=　オープンエラー</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<H3><A name="close"></A>Ｃｌｏｓｅ（）　Ａｓ　Ｉｎｔｅｇｅｒ</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>機能</B>：通信ポートを閉じます。<BR>
+<BR>
+<B>引数</B>：無し<BR>
+<BR>
+<B>戻り値</B>：<BR>
+　　COMM_OK　=　正常終了<BR>
+　　COMM_ERROR_CLOSE　=　クローズエラー</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<H3><A name="read"></A>Ｒｅａｄ（ ＢｙＶａｌ　ｂｕｆｆ　Ａｓ　Ｓｔｒｉｎｇ，<BR>
+　　　　　ＢｙＶａｌ　ｌｅｎ　Ａｓ　Ｉｎｔｅｇｅｒ，<BR>
+　　　　　ＢｙＲｅｆ　ｒＬｅｎ　Ａｓ　Ｉｎｔｅｇｅｒ，<BR>
+　　　　　ＢｙＲｅｆ　ｅｎｄＦｌａｇ　Ａｓ　Ｂｏｏｌｅａｎ ）　Ａｓ　Ｉｎｔｅｒｇｅｒ</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>機能</B>：文字列データを受信します。<BR>
+<BR>
+<B>引数</B>：<BR>
+　　buff <BR>
+　　　　受信バッファ<BR>
+　　len<BR>
+　　　　受信可能文字数(バッファサイズ)<BR>
+　　rLen<BR>
+　　　　受信した文字数(データサイズ)<BR>
+　　endFlag<BR>
+　　　　受信終了フラグ　=　TRUE:受信終了　FALSE:受信継続<BR>
+<BR>
+<B>戻り値</B>：<BR>
+　　COMM_OK　=　正常終了<BR>
+　　COMM_ERROR_READ　=　受信エラー</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<H3>Ｒｅａｄ( ＢｙＲｅｆ　Ｂｕｆｆ（）　Ａｓ　Ｂｙｔｅ，<BR>
+　　　　 ＢｙＶａｌ　ｓｉｚｅ　Ａｓ　Ｉｎｔｅｇｅｒ， <BR>
+　　　　 ＢｙＲｅｆ　ｒＳｉｚｅ　Ａｓ　Ｉｎｔｅｇｅｒ，<BR>
+　　　　 ＢｙＲｅｆ　ｅｎｄＦｌａｇ　Ａｓ　Ｂｏｏｌｅａｎ ) As Integer</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>機能</B>：バイナリーデータを受信します。<BR>
+<BR>
+<B>引数</B>：<BR>
+　　buff <BR>
+　　　　受信バッファ<BR>
+　　size<BR>
+　　　　受信バッファサイズ<BR>
+　　rSize<BR>
+　　　　受信したデータサイズ<BR>
+　　endFlag<BR>
+　　　　受信終了フラグ　=　TRUE:受信終了　FALSE:受信継続<BR>
+<BR>
+<B>戻り値</B>：<BR>
+　　COMM_OK　=　正常終了<BR>
+　　COMM_ERROR_READ　=　受信エラー</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<H3><A name="write"></A>Ｗｒｉｔｅ（ＢｙＶａｌ　ｂｕｆｆ　Ａｓ　Ｓｔｒｉｎｇ）　Ａｓ　Ｉｎｔｅｇｅｒ</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>機能</B>：文字列データを送信します。<BR>
+<BR>
+<B>引数</B>：<BR>
+　　buff <BR>
+　　　　送信バッファ<BR>
+<BR>
+<B>戻り値</B>：<BR>
+　　COMM_OK　=　正常終了<BR>
+　　COMM_ERROR_WRITE　=　送信エラー</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<H3>Ｗｒｉｔｅ（ ＢｙＶａｌ　ｂｕｆｆ（）　Ａｓ　Ｂｙｔｅ，<BR>
+　　　　　ＢｙＶａｌ　ｓｉｚｅ　Ａｓ　Ｉｎｔｅｇｅｒ，<BR>
+　　　　　ＢｙＲｅｆ　ｗＳｉｚｅ　Ａｓ　Ｉｎｔｅｇｅｒ ）　Ａｓ　Ｉｎｔｅｇｅｒ</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>機能</B>：バイナリーデータを送信します。<BR>
+<BR>
+<B>引数</B>：<BR>
+　　buff <BR>
+　　　　送信バッファ<BR>
+　　size<BR>
+　　　　送信データサイズ<BR>
+　　wSize<BR>
+　　　　送信済みデータサイズ<BR>
+<BR>
+<B>戻り値</B>：<BR>
+　　COMM_OK　=　正常終了<BR>
+　　COMM_ERROR_WRITE　=　送信エラー</BLOCKQUOTE>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<H3><A name="settimeout"></A>ＳｅｔＴｉｍｅｏｕｔ（ ＢｙＶａｌ　ｖａｌｕｅ　Ａｓ　Ｉｎｔｅｇｅｒ ）　Ａｓ　Ｉｎｔｅｇｅｒ</H3>
+</BLOCKQUOTE>
+<BLOCKQUOTE>
+<BLOCKQUOTE><B>機能</B>：送受信のタイムアウト時間を設定します。<BR>
+<BR>
+<B>引数</B>：<BR>
+　　value<BR>
+　　　　タイムアウト時間　=　 0:タイムアウト無限<BR>
+　　　　　　　　　　　　　　　　　　1　～　　　　　　　　　(ms)<BR>
+<BR>
+<B>戻り値</B>：<BR>
+　　COMM_OK　=　正常終了<BR>
+　　COMM_ERROR_TIMEOUT　=　タイムアウト　又は、タイムアウト設定エラー</BLOCKQUOTE>
+</BLOCKQUOTE>
+</BODY>
+</HTML>

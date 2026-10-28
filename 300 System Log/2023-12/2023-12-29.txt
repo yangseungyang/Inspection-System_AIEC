@@ -1,0 +1,493 @@
+C:\X号機\標準化検査装置\Inspection System\300 System Log\2023-12\2023-12-29.txt
+
+08:40:11 ■　システム起動 ==========================================================
+
+08:40:11 ●　メイン画面　起動 -------------------- (frm001_Main起動)
+
+08:40:11 二重起動チェック　完了
+
+08:40:11 装置状況確認　開始　・・・
+
+08:40:11 ●　装置状況確認 ------------------------ (frm100_EquipmentCondition起動)
+
+08:40:11 サーバー接続：X:\\10.36.14.215\fam3
+
+08:40:11 共通ファイル取得：NameEntry.mdb
+08:40:12 共通ファイル取得：MSCODE.mdb
+08:40:12 共通ファイル取得：完了
+
+08:40:12 サーバー切断　・・・
+08:40:12 サーバー切断：完了
+
+08:40:12 時刻調整設定：実施しない。
+
+08:40:12 サインタワー確認　・・・
+08:40:12 サインタワーの????：??
+
+08:40:12 温度・湿度設定読込　・・・
+08:40:13 ??・????：24.2℃　23.0%
+
+08:40:13 データ保存：24.2℃ 23.0%
+08:40:13 データ保存　完了
+
+08:40:13 装置状況:正常
+
+08:40:13 ●　メイン画面　データ読込と表示
+08:40:13 FA-M3 ATE X号機
+08:40:13 Ver. 0.04
+08:40:14 温度：24.2 / 湿度：23.0
+
+08:40:14 作業者リスト読込：完了
+08:40:14 責任者リスト読込：完了
+08:40:14 作業者：Kwang Nim Im
+08:40:14 責任者：---
+08:40:14 装置稼動状況：正常
+08:40:14 最新データ読込　完了：2023-12-28 13:57:15
+08:40:14 今日のファイル　無し
+08:40:14 装置番号：X
+08:40:14 frm001_Main : 表示データ　読込完了
+
+08:41:18 frm001_Main : ???? ON
+
+08:41:18 ●　自己診断 ------------------------ (frm120_SelfCheck起動)
+
+08:41:19 frm120_SelfCheck : 表示データ　読込完了
+
+08:41:20 frm120_SelfCheck : START ON
+
+08:41:20 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+08:41:20 開始条件保存：F3CU04-1H-始業点検,,,,,,,,CHK,F3CU04-1H-始業点検
+
+08:41:20 検査用型式：F3CU04-1H-始業点検
+08:41:20 検査画面呼出し・・・
+
+08:41:20 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+08:41:21 フォルダ/ファイル準備：完了
+08:41:21 一時保存開始データ書込：完了
+08:41:21 一時保存開始ログ書込：完了
+
+08:41:21 検査型式読込：F3CU04-1H-始業点検
+08:41:21 検査項目ファイル名読込：F3CU04-1H-始業点検.mdb
+08:41:21 検査項目読込：完了
+08:41:21 frm030_InspectionInformation : 表示データ　読込完了
+08:41:52 検査実施：I42:熱電対/ＤＣｍＶ 入力確度試験 １２．５ｍＶレンジ
+正常値： 91739.91 ～ 91760.88
+測定値： 91761.16　　.Ｃｈ： 3
+08:43:09 検査実施：I42:熱電対/ＤＣｍＶ 入力確度試験 １２．５ｍＶレンジ
+正常値： -10491 ～ -10480.52
+測定値： -2.387723E-38　　.Ｃｈ： 1
+08:44:15 検査実施：I42:熱電対/ＤＣｍＶ 入力確度試験 １２．５ｍＶレンジ
+正常値： -10491 ～ -10480.52
+測定値： -2.387723E-38　　.Ｃｈ： 1
+08:45:33 検査実施：I42:熱電対/ＤＣｍＶ 入力確度試験 １２．５ｍＶレンジ
+正常値： -10491 ～ -10480.52
+測定値： -2.387723E-38　　.Ｃｈ： 1
+
+08:45:54 frm030_InspectionInformation : CLOSE ON
+
+08:45:54 frm030_InspectionInformation : CLOSE ON
+
+08:45:54 frm030_InspectionInformation : CLOSE ON
+
+08:45:55 frm030_InspectionInformation : CLOSE ON
+
+08:45:55 frm030_InspectionInformation : CLOSE ON
+
+08:45:55 frm030_InspectionInformation : CLOSE ON
+08:45:58 一時保存終了データ書込：完了
+08:45:58 一時保存終了ログ書込：完了
+08:45:58 サーバ保存：完了
+08:45:58 検査動作：MANではないので動作終了
+
+08:45:58 ●　メイン画面　データ読込と表示
+08:45:58 FA-M3 ATE X号機
+08:45:58 Ver. 0.04
+08:45:58 温度：24.2 / 湿度：23.0
+
+08:45:58 作業者リスト読込：完了
+08:45:58 責任者リスト読込：完了
+08:45:58 作業者：Kwang Nim Im
+08:45:58 責任者：---
+08:45:58 装置稼動状況：正常
+08:45:58 最新データ読込　完了：2023-12-29 08:41:21
+08:45:58 本日データ読込　完了
+08:45:58 装置番号：X
+08:45:58 frm001_Main : 表示データ　読込完了
+
+08:46:08 frm001_Main : ???? ON
+
+08:46:09 ●　自己診断 ------------------------ (frm120_SelfCheck起動)
+
+08:46:09 frm120_SelfCheck : 表示データ　読込完了
+
+08:46:10 frm120_SelfCheck : START ON
+
+08:46:10 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+08:46:10 開始条件保存：F3CU04-1H-始業点検,,,,,,,,CHK,F3CU04-1H-始業点検
+
+08:46:10 検査用型式：F3CU04-1H-始業点検
+08:46:10 検査画面呼出し・・・
+
+08:46:10 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+08:46:10 フォルダ/ファイル準備：完了
+08:46:11 一時保存開始データ書込：完了
+08:46:11 一時保存開始ログ書込：完了
+
+08:46:11 検査型式読込：F3CU04-1H-始業点検
+08:46:11 検査項目ファイル名読込：F3CU04-1H-始業点検.mdb
+08:46:11 検査項目読込：完了
+08:46:11 frm030_InspectionInformation : 表示データ　読込完了
+08:46:27 検査実施：I42:熱電対/ＤＣｍＶ 入力確度試験 １２．５ｍＶレンジ
+正常値： -10491 ～ -10480.52
+測定値： -10480.27　　.Ｃｈ： 2
+
+09:02:04 frm030_InspectionInformation : CLOSE ON
+
+09:02:04 frm030_InspectionInformation : CLOSE ON
+
+09:02:04 frm030_InspectionInformation : CLOSE ON
+09:02:08 一時保存終了データ書込：完了
+09:02:08 一時保存終了ログ書込：完了
+09:02:08 サーバ保存：完了
+09:02:08 検査動作：MANではないので動作終了
+
+09:02:08 ●　メイン画面　データ読込と表示
+09:02:08 FA-M3 ATE X号機
+09:02:08 Ver. 0.04
+09:02:08 温度：24.2 / 湿度：23.0
+
+09:02:08 作業者リスト読込：完了
+09:02:08 責任者リスト読込：完了
+09:02:08 作業者：Kwang Nim Im
+09:02:08 責任者：---
+09:02:08 装置稼動状況：正常
+09:02:08 最新データ読込　完了：2023-12-29 08:46:10
+09:02:08 本日データ読込　完了
+09:02:08 装置番号：X
+09:02:08 frm001_Main : 表示データ　読込完了
+
+09:15:12 frm001_Main : ???? ON
+
+09:15:13 ●　自己診断 ------------------------ (frm120_SelfCheck起動)
+
+09:15:13 frm120_SelfCheck : 表示データ　読込完了
+
+09:15:14 frm120_SelfCheck : START ON
+
+09:15:14 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+09:15:14 開始条件保存：F3CU04-1H-始業点検,,,,,,,,CHK,F3CU04-1H-始業点検
+
+09:15:14 検査用型式：F3CU04-1H-始業点検
+09:15:14 検査画面呼出し・・・
+
+09:15:14 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+09:15:14 フォルダ/ファイル準備：完了
+09:15:15 一時保存開始データ書込：完了
+09:15:15 一時保存開始ログ書込：完了
+
+09:15:15 検査型式読込：F3CU04-1H-始業点検
+09:15:15 検査項目ファイル名読込：F3CU04-1H-始業点検.mdb
+09:15:15 検査項目読込：完了
+09:15:15 frm030_InspectionInformation : 表示データ　読込完了
+09:19:16 一時保存終了データ書込：完了
+09:19:16 一時保存終了ログ書込：完了
+09:19:16 サーバ保存：完了
+09:19:16 検査動作：MANではないので動作終了
+
+09:19:17 frm030_InspectionInformation : CLOSE ON
+
+09:19:17 ●　メイン画面　データ読込と表示
+09:19:17 FA-M3 ATE X号機
+09:19:17 Ver. 0.04
+09:19:17 温度：24.2 / 湿度：23.0
+
+09:19:17 作業者リスト読込：完了
+09:19:17 責任者リスト読込：完了
+09:19:17 作業者：Kwang Nim Im
+09:19:17 責任者：---
+09:19:17 装置稼動状況：正常
+09:19:17 最新データ読込　完了：2023-12-29 09:15:14
+09:19:17 本日データ読込　完了
+09:19:17 装置番号：X
+09:19:17 frm001_Main : 表示データ　読込完了
+
+09:54:45 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+09:54:45 PLASMA通信：F3CX04-0H,,T11400174,2008891419,000050,0003,2,2008891419000050
+
+09:54:46 開始条件保存：F3CX04-0H,,T11400174,2008891419,000050,0003,2,2008891419000050,AUT,
+
+09:54:46 オーダチェック：オーダ重複無し
+09:54:46 オーダチェック：新規登録完了
+
+09:54:46 検査用型式：F3CX04-0H
+09:54:46 検査画面呼出し・・・
+
+09:54:46 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+09:54:46 フォルダ/ファイル準備：完了
+09:54:47 一時保存開始データ書込：完了
+09:54:47 一時保存開始ログ書込：完了
+
+09:54:47 検査型式読込：F3CX04-0H
+09:54:47 検査項目ファイル名読込：F3CX04-0H.mdb
+09:54:47 検査項目読込：完了
+09:54:47 frm030_InspectionInformation : 表示データ　読込完了
+09:58:25 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値24.15374 ～ 25.15374
+測定値22.7487、CH：2
+11:23:16 QDB Write Successful
+11:23:16 一時保存終了データ書込：完了
+11:23:16 一時保存終了ログ書込：完了
+11:23:16 サーバ保存：完了
+11:23:16 検査動作：MANではないので動作終了
+
+11:24:10 frm030_InspectionInformation : CLOSE ON
+
+11:24:10 ●　メイン画面　データ読込と表示
+11:24:10 FA-M3 ATE X号機
+11:24:10 Ver. 0.04
+11:24:10 温度：24.2 / 湿度：23.0
+
+11:24:10 作業者リスト読込：完了
+11:24:10 責任者リスト読込：完了
+11:24:10 作業者：Kwang Nim Im
+11:24:10 責任者：---
+11:24:10 装置稼動状況：正常
+11:24:10 最新データ読込　完了：2023-12-29 09:54:46
+11:24:10 本日データ読込　完了
+11:24:10 装置番号：X
+11:24:10 frm001_Main : 表示データ　読込完了
+
+11:24:25 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+11:24:25 PLASMA通信：F3CX04-0H,,T11109007,2009147598,000020,0001,0,2009147598000020
+
+11:24:26 開始条件保存：F3CX04-0H,,T11109007,2009147598,000020,0001,0,2009147598000020,AUT,
+
+11:24:26 オーダチェック：オーダ重複無し
+11:24:26 オーダチェック：新規登録完了
+
+11:24:26 検査用型式：F3CX04-0H
+11:24:26 検査画面呼出し・・・
+
+11:24:26 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+11:24:26 フォルダ/ファイル準備：完了
+11:24:26 一時保存開始データ書込：完了
+11:24:27 一時保存開始ログ書込：完了
+
+11:24:27 検査型式読込：F3CX04-0H
+11:24:27 検査項目ファイル名読込：F3CX04-0H.mdb
+11:24:27 検査項目読込：完了
+11:24:27 frm030_InspectionInformation : 表示データ　読込完了
+11:43:52 QDB Write Successful
+11:43:52 一時保存終了データ書込：完了
+11:43:52 一時保存終了ログ書込：完了
+11:43:52 サーバ保存：完了
+11:43:52 検査動作：MANではないので動作終了
+
+11:44:48 frm030_InspectionInformation : CLOSE ON
+
+11:44:48 ●　メイン画面　データ読込と表示
+11:44:48 FA-M3 ATE X号機
+11:44:48 Ver. 0.04
+11:44:48 温度：24.2 / 湿度：23.0
+
+11:44:49 作業者リスト読込：完了
+11:44:49 責任者リスト読込：完了
+11:44:49 作業者：Kwang Nim Im
+11:44:49 責任者：---
+11:44:49 装置稼動状況：正常
+11:44:49 最新データ読込　完了：2023-12-29 11:24:26
+11:44:49 本日データ読込　完了
+11:44:49 装置番号：X
+11:44:49 frm001_Main : 表示データ　読込完了
+
+11:45:09 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+11:45:09 PLASMA通信：F3CU04-1H,,T11100129,2008636823,000100,0002,0,2008636823000100
+
+11:45:10 開始条件保存：F3CU04-1H,,T11100129,2008636823,000100,0002,0,2008636823000100,AUT,
+
+11:45:10 オーダチェック：オーダ重複無し
+11:45:10 オーダチェック：新規登録完了
+
+11:45:10 検査用型式：F3CU04-1H
+11:45:10 検査画面呼出し・・・
+
+11:45:10 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+11:45:10 フォルダ/ファイル準備：完了
+11:45:11 一時保存開始データ書込：完了
+11:45:11 一時保存開始ログ書込：完了
+
+11:45:11 検査型式読込：F3CU04-1H
+11:45:11 検査項目ファイル名読込：F3CU04-1H.mdb
+11:45:11 検査項目読込：完了
+11:45:11 frm030_InspectionInformation : 表示データ　読込完了
+11:49:28 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値24.91403 ～ 25.91403
+測定値24.77285、CH：1
+13:29:30 QDB Write Successful
+13:29:30 一時保存終了データ書込：完了
+13:29:30 一時保存終了ログ書込：完了
+13:29:30 サーバ保存：完了
+13:29:30 検査動作：MANではないので動作終了
+
+13:30:39 frm030_InspectionInformation : CLOSE ON
+
+13:30:39 ●　メイン画面　データ読込と表示
+13:30:39 FA-M3 ATE X号機
+13:30:39 Ver. 0.04
+13:30:39 温度：24.2 / 湿度：23.0
+
+13:30:39 作業者リスト読込：完了
+13:30:39 責任者リスト読込：完了
+13:30:39 作業者：Kwang Nim Im
+13:30:39 責任者：---
+13:30:39 装置稼動状況：正常
+13:30:39 最新データ読込　完了：2023-12-29 11:45:10
+13:30:39 本日データ読込　完了
+13:30:39 装置番号：X
+13:30:39 frm001_Main : 表示データ　読込完了
+
+13:30:47 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+13:30:47 PLASMA通信：F3CX04-0H,,T11113718,2009288898,000080,0001,0,2009288898000080
+
+13:30:47 開始条件保存：F3CX04-0H,,T11113718,2009288898,000080,0001,0,2009288898000080,AUT,
+
+13:30:47 オーダチェック：オーダ重複無し
+13:30:48 オーダチェック：新規登録完了
+
+13:30:48 検査用型式：F3CX04-0H
+13:30:48 検査画面呼出し・・・
+
+13:30:48 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+13:30:48 フォルダ/ファイル準備：完了
+13:30:48 一時保存開始データ書込：完了
+13:30:48 一時保存開始ログ書込：完了
+
+13:30:48 検査型式読込：F3CX04-0H
+13:30:48 検査項目ファイル名読込：F3CX04-0H.mdb
+13:30:48 検査項目読込：完了
+13:30:48 frm030_InspectionInformation : 表示データ　読込完了
+13:34:25 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値24.573 ～ 25.573
+測定値24.30849、CH：1
+13:41:58 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+13:42:18 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+13:43:56 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+13:44:27 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+13:44:40 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+13:46:03 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値24.53242 ～ 25.53242
+測定値24.41879、CH：2
+14:18:35 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+14:21:15 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+14:21:31 検査実施：I49:端子台検査 System.ApplicationException: 種類 'System.ApplicationException' の例外がスローされました。
+   場所 Inspection_System.cls2P0_Inspection.TestExecute() 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\04 InspectionClass\cls2P0_Inspection.vb:行 98
+   場所 Inspection_System.frm030_InspectionInformation.Call_Inspection(String iName) 場所 C:\X号機\標準化検査装置\Inspection System\000 Inspection System\01 Form\frm030_InspectionInformation.vb:行 2126
+15:04:44 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値24.98842 ～ 25.98842
+測定値23.75995、CH：2
+15:07:12 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値25.01632 ～ 26.01632
+測定値24.62755、CH：1
+15:07:56 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値25.03291 ～ 26.03291
+測定値24.9379、CH：1
+15:40:59 QDB Write Successful
+15:40:59 一時保存終了データ書込：完了
+15:41:00 一時保存終了ログ書込：完了
+15:41:00 サーバ保存：完了
+15:41:00 検査動作：MANではないので動作終了
+
+15:42:30 frm030_InspectionInformation : CLOSE ON
+
+15:42:30 ●　メイン画面　データ読込と表示
+15:42:30 FA-M3 ATE X号機
+15:42:30 Ver. 0.04
+15:42:30 温度：24.2 / 湿度：23.0
+
+15:42:30 作業者リスト読込：完了
+15:42:30 責任者リスト読込：完了
+15:42:30 作業者：Kwang Nim Im
+15:42:30 責任者：---
+15:42:30 装置稼動状況：正常
+15:42:30 最新データ読込　完了：2023-12-29 13:30:48
+15:42:30 本日データ読込　完了
+15:42:30 装置番号：X
+15:42:30 frm001_Main : 表示データ　読込完了
+
+15:42:49 ●　検査動作制御 ------------------------ (frm020_InspectionStartEnd起動)
+
+15:42:50 PLASMA通信：F3CU04-1H,,T11109006,2009147598,000010,0002,0,2009147598000010
+
+15:42:50 開始条件保存：F3CU04-1H,,T11109006,2009147598,000010,0002,0,2009147598000010,AUT,
+
+15:42:50 オーダチェック：オーダ重複無し
+15:42:50 オーダチェック：新規登録完了
+
+15:42:50 検査用型式：F3CU04-1H
+15:42:50 検査画面呼出し・・・
+
+15:42:50 ●　検査画面 ------------------------ (frm030_InspectionInformation起動)
+15:42:51 フォルダ/ファイル準備：完了
+15:42:51 一時保存開始データ書込：完了
+15:42:51 一時保存開始ログ書込：完了
+
+15:42:51 検査型式読込：F3CU04-1H
+15:42:51 検査項目ファイル名読込：F3CU04-1H.mdb
+15:42:51 検査項目読込：完了
+15:42:51 frm030_InspectionInformation : 表示データ　読込完了
+15:47:11 検査実施：I49:端子台検査 RJC端子台検査NG(標準との比較)
+正常値25.14427 ～ 26.14427
+測定値24.99664、CH：1
+16:24:51 QDB Write Successful
+16:24:51 一時保存終了データ書込：完了
+16:24:51 一時保存終了ログ書込：完了
+16:24:51 サーバ保存：完了
+16:24:51 検査動作：MANではないので動作終了
+
+16:25:59 frm030_InspectionInformation : CLOSE ON
+
+16:25:59 ●　メイン画面　データ読込と表示
+16:25:59 FA-M3 ATE X号機
+16:25:59 Ver. 0.04
+16:25:59 温度：24.2 / 湿度：23.0
+
+16:25:59 作業者リスト読込：完了
+16:25:59 責任者リスト読込：完了
+16:25:59 作業者：Kwang Nim Im
+16:25:59 責任者：---
+16:25:59 装置稼動状況：正常
+16:25:59 最新データ読込　完了：2023-12-29 15:42:51
+16:25:59 本日データ読込　完了
+16:25:59 装置番号：X
+16:25:59 frm001_Main : 表示データ　読込完了
+
+17:00:49 frm001_Main : ?? ON
+
+17:00:51 ●　システム終了処理 --------------------
+
+17:00:51 サーバー切断　・・・
+17:00:51 サーバー切断：完了
+
+17:00:52 ■　システム終了 ==========================================================
+

@@ -1,0 +1,50 @@
+2025-07-14 15:43:27.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.05.19  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-07-14 15:43:27
+Temperature       : 25.3 degC
+Humidity          : 64.8 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N/STN
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N/STN
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 15:43:30
+**************************************************
+ 検査準備　異常
+
+IC1:ランタイムライセンス書込み 15:45:39
+**************************************************
+
+ランタイムライセンス登録
+ランタイムライセンス有効化 異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : ランタイムライセンス有効化 異常
+Inspection Time  : 00:00:22
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

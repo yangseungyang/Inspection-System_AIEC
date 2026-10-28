@@ -1,0 +1,97 @@
+2025-05-15 17:42:07.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-05-15 17:42:07
+Temperature       : 25.5 degC
+Humidity          : 57.1 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 17:42:08
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 17:42:09
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA4:Mac Address Port0 17:43:01
+**************************************************
+MacAddress1 : 000064BE6149
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 17:43:04
+**************************************************
+MacAddress2 : 000064BE614A
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 17:43:06
+**************************************************
+MacAddress3 : 000064BE614B
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 17:43:08
+**************************************************
+MacAddress4 : 000064BE614C
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 17:43:09
+**************************************************
+MacAddress5 : 000064BE614D
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB2:Mac Address書込み 17:43:11
+**************************************************
+MAC Address1:000064BE6149
+MAC Address2:000064BE614A
+MAC Address3:000064BE614B
+MAC Address4:000064BE614C
+MAC Address5:000064BE614D
+Mac Address書込み NG
+
+IB2:Mac Address書込み 17:43:49
+**************************************************
+MAC Address1:000064BE6149
+MAC Address2:000064BE614A
+MAC Address3:000064BE614B
+MAC Address4:000064BE614C
+MAC Address5:000064BE614D
+Mac Address書込み NG
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : Mac Address書込み NG
+Inspection Time  : 00:01:52
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

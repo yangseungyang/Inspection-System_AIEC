@@ -1,0 +1,69 @@
+2025-04-16 17:26:57.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-04-16 17:26:57
+Temperature       : 25.6 degC
+Humidity          : 35.5 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N-BAT.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 17:26:58
+**************************************************
+ 検査準備　異常
+
+I16:ライトプロテクトテスト(SDメモリカードテスト) 17:27:07
+**************************************************
+
+ライトプロテクトテスト開始
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+SD?? ???? ?? ??: clock:		50000000 Hz
+actual clock:	50000000 Hz
+vdd:		21 (3.3 ~ 3.4 V)
+bus mode:	2 (push-pull)
+chip select:	0 (don't care)
+power mode:	2 (on)
+bus width:	2 (4 bits)
+timing spec:	7 (sd uhs DDR50)
+signal voltage:	1 (1.80 V)
+driver type:	0 (driver type B)
+
+???? OK (I16:ライトプロテクトテスト(SDメモリカードテスト))
+ライトプロテクトテスト 状態: 1
+ライトプロテクト OK : Write ?可能
+ライトプロテクトテストOK
+RS232SET Read 異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : RS232SET Read 異常
+Inspection Time  : 00:01:28
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

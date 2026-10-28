@@ -1,0 +1,53 @@
+2025-05-21 10:19:39.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-05-21 10:19:39
+Temperature       : 25.4 degC
+Humidity          : 63.2 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N/NBT
+Inspection File   : A8HCA-11-0N-NBT.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N/NBT
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 10:19:40
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 10:19:41
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+I02:Ethernetテスト 10:20:14
+**************************************************
+Ethernetテスト NG
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : Ethernetテスト NG
+Inspection Time  : 00:00:42
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

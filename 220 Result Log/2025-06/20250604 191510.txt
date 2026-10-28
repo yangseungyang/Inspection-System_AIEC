@@ -1,0 +1,224 @@
+2025-06-04 19:15:10.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-06-04 19:15:10
+Temperature       : 24.6 degC
+Humidity          : 46.6 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N/NBT
+Inspection File   : A8HCA-11-0N-NBT.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N/NBT
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 19:15:10
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 19:15:13
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA1:eMMC Download 19:15:53
+**************************************************
+
+eMMC Download開始
+Send : TS,0F30,0
+Download 420s Wait
+Recv : OK,1F30,0
+eMMC Download OK
+
+IA2:eMMC SUM値算出テスト 19:21:52
+**************************************************
+
+eMMC SUM値算出テスト開始
+Send : TS,0210,4,D610824A,D610824A,4172961C,4172961C
+Recv : OK,1210,D610824A,D610824A,4172961C,4172961C
+eMMC SUM値算出テスト OK
+
+IB3:Ubuntu Patch 19:23:44
+**************************************************
+
+Ubuntu Patch開始
+Send : TS,0F40,0
+Recv : OK,1F40,0
+Ubuntu Patch OK
+
+IA3:Q-SPI SUM値算出テスト 19:25:00
+**************************************************
+
+Q-SPI SUM値算出テスト開始
+
+Send : TS,0110,4,875A77A5,875A77A5,7A09FB98,15E7CDAC
+Recv : NG,8110,875A77A5,875A77A5,6AB45045,15E7CDAC
+NG,8110,875A77A5,875A77A5,6AB45045,15E7CDAC
+Q-SPI SUM値算出テスト : NG,8110,875A77A5,875A77A5,6AB45045,15E7CDAC  異常
+
+I01:検査メインプログラムのVersionテスト 19:25:33
+**************************************************
+
+検査メインプログラムのVersionテスト　開始
+
+Send : TS,0DC0,1,R1.01.01
+Recv : OK,1DC0,R1.01.01
+検査メインプログラムのVersionテストOK
+
+I04:FPGAテスト 19:25:38
+**************************************************
+FPGA Revision テスト開始
+Send : TS,0D80,1,9
+Recv : OK,1D80,0
+FPGA Revision テスト OK
+
+FPGA ModuleID テスト開始
+Send : TS,0DB0,1,
+Recv : OK,1DB0,0
+FPGA ModuleID テスト OK
+
+FPGAテスト OK
+
+IA4:Mac Address Port0 19:25:41
+**************************************************
+MacAddress1 : 000064BE611E
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 19:25:44
+**************************************************
+MacAddress2 : 000064BE611F
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 19:25:46
+**************************************************
+MacAddress3 : 000064BE6120
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 19:25:49
+**************************************************
+MacAddress4 : 000064BE6121
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 19:25:51
+**************************************************
+MacAddress5 : 000064BE6122
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB2:Mac Address書込み 19:25:53
+**************************************************
+MAC Address1:000064BE611E
+MAC Address2:000064BE611F
+MAC Address3:000064BE6120
+MAC Address4:000064BE6121
+MAC Address5:000064BE6122
+
+MAC1書込み ============ 19:25:57
+Send : TS,0130,2,6,000064BE611E
+Recv : OK,1130,000064BE611E
+
+MAC2書込み ============ 19:26:02
+Send : TS,0130,2,7,000064BE611F
+Recv : OK,1130,000064BE611F
+
+MAC3書込み ============ 19:26:05
+Send : TS,0130,2,8,000064BE6120
+Recv : OK,1130,000064BE6120
+
+MAC4書込み ============ 19:26:08
+Send : TS,0130,2,9,000064BE6121
+Recv : OK,1130,000064BE6121
+
+MAC5書込み ============ 19:26:10
+Send : TS,0130,2,A,000064BE6122
+Recv : OK,1130,000064BE6122
+
+IA9: MACアドレス 重複確認 19:26:14
+**************************************************
+MacAddress は1つ登録確認OK
+MacAddress1 は1つ登録確認OK
+MacAddress2 は1つ登録確認OK
+MacAddress3 は1つ登録確認OK
+MacAddress4 は1つ登録確認OK
+
+IB1:Flash Memoryへの書込み 19:26:15
+**************************************************
+
+モジュール形名書込み開始
+Send : TS,0130,2,1,A8HCA-11-0N/NBT
+Recv : OK,1130,A8HCA-11-0N/NBT
+書き込み値=A8HCA-11-0N/NBT, 読み込み値=A8HCA-11-0N/NBT)
+モジュール形名書込み OK
+
+
+シリアル番号設定開始
+Send : TS,0130,2,2,T12345678
+Recv : OK,1130,T12345678
+書き込み値=T12345678, 読み込み値=T12345678)
+シリアル番号書込み OK
+
+
+リリースナンバ書込み開始
+Send : TS,0130,2,3,R1.00.01
+Recv : OK,1130,R1.00.01
+書き込み値=R1.00.01, 読み込み値=R1.00.01)
+リリースナンバ書込み OK
+
+
+カレントナンバ書込み開始
+Send : TS,0130,2,4,R1.00.01
+Recv : OK,1130,R1.00.01
+書き込み値=R1.00.01, 読み込み値=R1.00.01)
+カレントナンバ書込み OK
+
+
+スタイルナンバ書込み開始
+Send : TS,0130,2,5,S0.01
+Recv : OK,1130,S0.01
+書き込み値=S0.01, 読み込み値=S0.01)
+スタイルナンバ書込み OK
+
+Flash Memoryへの書込み OK
+
+I98:出荷設定確認 19:26:47
+**************************************************
+出荷設定確認開始
+モジュールの再起動開始
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+モジュールの再起動OK
+
+ 出荷設定　異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             :  出荷設定　異常
+Inspection Time  : 00:12:06
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

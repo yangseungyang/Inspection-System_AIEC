@@ -1,0 +1,151 @@
+2025-05-29 11:22:09.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-05-29 11:22:09
+Temperature       : 24.7 degC
+Humidity          : 53.0 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 11:22:10
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 11:22:13
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA4:Mac Address Port0 11:23:37
+**************************************************
+MacAddress1 : 000064BE6119
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 11:23:38
+**************************************************
+MacAddress2 : 000064BE611A
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 11:23:40
+**************************************************
+MacAddress3 : 000064BE611B
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 11:23:41
+**************************************************
+MacAddress4 : 000064BE611C
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 11:23:42
+**************************************************
+MacAddress5 : 000064BE611D
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB2:Mac Address書込み 11:23:43
+**************************************************
+MAC Address1:000064BE6119
+MAC Address2:000064BE611A
+MAC Address3:000064BE611B
+MAC Address4:000064BE611C
+MAC Address5:000064BE611D
+
+MAC1書込み ============ 11:23:44
+Send : TS,0130,2,6,000064BE6119
+Recv : OK,1130,000064BE6119
+
+MAC2書込み ============ 11:23:46
+Send : TS,0130,2,7,000064BE611A
+Recv : OK,1130,000064BE611A
+
+MAC3書込み ============ 11:23:48
+Send : TS,0130,2,8,000064BE611B
+Recv : OK,1130,000064BE611B
+
+MAC4書込み ============ 11:23:50
+Send : TS,0130,2,9,000064BE611C
+Recv : OK,1130,000064BE611C
+
+MAC5書込み ============ 11:23:52
+Send : TS,0130,2,A,000064BE611D
+Recv : OK,1130,000064BE611D
+
+IA9: MACアドレス 重複確認 11:23:55
+**************************************************
+MacAddress は1つ登録確認OK
+MacAddress1 は1つ登録確認OK
+MacAddress2 は1つ登録確認OK
+MacAddress3 は1つ登録確認OK
+MacAddress4 は1つ登録確認OK
+
+IB1:Flash Memoryへの書込み 11:23:56
+**************************************************
+
+スタイルナンバ書込み開始
+Send : TS,0130,2,5,S0.01
+Recv : OK,1130,S0.01
+書き込み値=S0.01, 読み込み値=S0.01)
+スタイルナンバ書込み OK
+
+
+リリースナンバ書込み開始
+Send : TS,0130,2,3,R0.01.01
+Recv : OK,1130,R0.01.01
+書き込み値=R0.01.01, 読み込み値=R0.01.01)
+リリースナンバ書込み OK
+
+
+カレントナンバ書込み開始
+Send : TS,0130,2,4,R0.01.01
+Recv : OK,1130,R0.01.01
+書き込み値=R0.01.01, 読み込み値=R0.01.01)
+カレントナンバ書込み OK
+
+
+モジュール形名書込み開始
+Send : TS,0130,2,1,A8HCA-11-0N
+Recv : OK,1130,A8HCA-11-0N
+書き込み値=A8HCA-11-0N, 読み込み値=A8HCA-11-0N)
+モジュール形名書込み OK
+
+
+シリアル番号設定開始
+Send : TS,0130,2,2,
+Recv : OK,1130
+シリアル番号書込み : OK,1130  異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : シリアル番号書込み : OK.1130  異常
+Inspection Time  : 00:02:46
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

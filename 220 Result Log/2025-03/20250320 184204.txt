@@ -1,0 +1,73 @@
+2025-03-20 18:42:04.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-03-20 18:42:04
+Temperature       : 24.7 degC
+Humidity          : 32.5 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA _Test_Only.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I90:ﾕﾆｯﾄ電源ON 18:42:05
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA4:Mac Address Port0 18:42:31
+**************************************************
+MacAddress1 : 000064BE6100
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 18:44:30
+**************************************************
+MacAddress2 : 000064BE6101
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 18:44:55
+**************************************************
+MacAddress3 : 000064BE6102
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 18:45:11
+**************************************************
+MacAddress4 : 000064BE6103
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB1:Flash Memoryへの書込み 18:45:39
+**************************************************
+RS232SET Read 異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : RS232SET Read 異常
+Inspection Time  : 00:03:45
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

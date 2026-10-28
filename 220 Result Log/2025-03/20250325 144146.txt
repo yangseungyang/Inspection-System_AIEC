@@ -1,0 +1,100 @@
+2025-03-25 14:41:46.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-03-25 14:41:46
+Temperature       : 26.1 degC
+Humidity          : 34.7 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA _Test_Only.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I90:ﾕﾆｯﾄ電源ON 14:41:47
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA4:Mac Address Port0 14:42:11
+**************************************************
+MacAddress.mdbにT12235870で登録したAddress再使用
+MacAddress1 : 000064BE6108
+
+IA5:Mac Address Port1 14:44:58
+**************************************************
+MacAddress2 : 000064BE6109
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 14:45:57
+**************************************************
+MacAddress3 : 000064BE610A
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 14:48:25
+**************************************************
+MacAddress4 : 000064BE610B
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 14:48:55
+**************************************************
+MacAddress5 : 000064BE610C
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB2:Mac Address書込み 14:48:56
+**************************************************
+MAC Address1:00:00:64:BE:61:08
+MAC Address2:00:00:64:BE:61:09
+MAC Address3:00:00:64:BE:61:0A
+MAC Address4:00:00:64:BE:61:0B
+MAC Address5:00:00:64:BE:61:0C
+
+MAC1書込み ============ 14:48:56
+Send : TS,0130,2,6,00:00:64:BE:61:08
+Recv : OK,1130,00:00:64:BE:61:08
+MAC1書込み　異常
+
+IB2:Mac Address書込み 14:49:55
+**************************************************
+MAC Address1:00:00:64:BE:61:08
+MAC Address2:00:00:64:BE:61:09
+MAC Address3:00:00:64:BE:61:0A
+MAC Address4:00:00:64:BE:61:0B
+MAC Address5:00:00:64:BE:61:0C
+
+MAC1書込み ============ 14:50:29
+Send : TS,0130,2,6,00:00:64:BE:61:08
+Recv : OK,1130,00:00:64:BE:61:08
+MAC1書込み　異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : MAC1書込み　異常
+Inspection Time  : 00:09:32
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

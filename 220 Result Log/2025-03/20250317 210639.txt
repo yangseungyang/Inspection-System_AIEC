@@ -1,0 +1,64 @@
+2025-03-17 21:06:39.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-03-17 21:06:39
+Temperature       : 22.8 degC
+Humidity          : 20.1 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA _Test_Only.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I90:ﾕﾆｯﾄ電源ON 21:06:40
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+I05:電源モジュールテスト 21:07:08
+**************************************************
+
+電力モニタ信号テスト（I2C）開始
+
+Send : TS,09B0,2,47E0,4E20
+Recv : OK,19B0,4AFA
+SPEC      : 23.000 V ～ 測定値 ～ 25.000 V
+測定値    : 23.992 V
+[OK] 測定? 23.992 V (範囲内)
+[Exception] TSCommand Recv ERR :  INSERT INTO ステートメントに、認識できないフィールド 'ExampleVoltage' があります。名前が正しいことを確認して、再度実行してください。
+Send : TS,09B0,2,47E0,4E20
+Recv : OK,19B0,4AFB
+SPEC      : 23.000 V ～ 測定値 ～ 25.000 V
+測定値    : 23.994 V
+[OK] 測定? 23.994 V (範囲内)
+[Exception] TSCommand Recv ERR :  INSERT INTO ステートメントに、認識できないフィールド 'ExampleVoltage' があります。名前が正しいことを確認して、再度実行してください。
+ INSERT INTO ステートメントに、認識できないフィールド 'ExampleVoltage' があります。名前が正しいことを確認して、再度実行してください。
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             :  INSERT INTO ステートメントに、認識できないフィールド -ExampleVoltage- があります。名前が正しいことを確認して、再度実行してください。
+Inspection Time  : 00:02:27
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

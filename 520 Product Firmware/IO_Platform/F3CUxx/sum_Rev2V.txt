@@ -1,0 +1,13 @@
+convert end
+write sum value = 0286
+all   sum value = 030E
+bhc Ver1.0.3 Binary data <-> Intel Hex data Converter.
+(C)1997-1998 Cow Project Workshop.
+Convert flag -h
+Input file f3cu04.bin
+Output file f3cu04.hex
+
+Making Intel Hex file.
+Input file size=524288
+Output file size=1261354
+Finished!

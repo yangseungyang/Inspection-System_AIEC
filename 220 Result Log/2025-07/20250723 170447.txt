@@ -1,0 +1,75 @@
+2025-07-23 17:04:47.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.05.19  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-07-23 17:04:47
+Temperature       : 25.1 degC
+Humidity          : 68.7 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N/ADV
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N/ADV
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 17:04:48
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 17:04:52
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IC2:TPMテスト 17:05:32
+**************************************************
+
+TPM信号線テスト 開始
+Send : TS,0F90,0
+Recv : OK,1F90,0
+
+TPM初期化 開始
+Send : TS,0FD0,0
+Recv : OK,1FD0,0
+TPMテスト OK
+
+IC1:ランタイムライセンス書込み 17:05:52
+**************************************************
+ランタイムライセンス設定 開始
+
+ランタイムライセンス初期化
+Send : TS,0FA0,0
+Recv : OK,1FA0,0
+
+ランタイムライセンス登録
+Send : TS,0FB0,6,EtherCatMain,1,Motion,1,Pid,1
+Recv : OK,1FB0,0
+
+ランタイムライセンス有効化
+Send : TS,0FC0,0
+Recv : OK,1FC0,0
+ランタイムライセンス設定 OK
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : STOP
+Memo             : 強制終了
+Inspection Time  : 00:01:13

@@ -1,0 +1,30 @@
+안녕하세요, TC 개발3Gr. 곽민정입니다. 라이선스 테스트 관련 확인방법 입니다. 
+TeraTerm에서 아래 명령 후 결과가 확인되면 정상입니다!
+ 
+명령: ls /ykgw/security/license/
+결과: cpuInfo.txt function key
+ 
+명령: sudo file /ykgw/security/license/key
+결과: /ykgw/security/license/key: data
+ 
+명령: sudo file /ykgw/security/license/function
+결과: /ykgw/security/license/function: data
+ 
+명령: sudo xxd /ykgw/security/license/key
+결과: 알 수 없는 값들
+ 
+명령: sudo xxd /ykgw/security/license/function
+결과: 알 수 없는 값들
+
+sudo mount /dev/mmcblk0p3 /mnt
+sudo file /mnt/ykgw/security/license/function
+sudo xxd /mnt/ykgw/security/license/key
+sudo umount /mnt
+
+sudo /ykgw/sbin/A8paramFa 0 0
+
+ls /mnt/ykgw/security/license/
+
+sudo file /mnt/ykgw/security/license/key
+
+sudo file /mnt/ykgw/security/license/function

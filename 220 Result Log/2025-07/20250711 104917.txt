@@ -1,0 +1,182 @@
+2025-07-11 10:49:17.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-07-11 10:49:17
+Temperature       : 25.2 degC
+Humidity          : 57.1 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 10:49:19
+**************************************************
+ 検査準備　異常
+
+I97:ﾕﾆｯﾄ電源OFF&ON 10:49:31
+**************************************************
+検査ユニット電源遮断OK
+約5秒 Wait
+検査ユニットOK
+モジュール起動まで約22秒 Wait
+検査ユニット電源投入OK
+
+IB3:Ubuntu Patch 10:50:38
+**************************************************
+
+Ubuntu Patch開始
+Send : TS,0F40,0
+OK,1F40,0
+Ubuntu Patch : OK,1F40,0  異常
+
+IC1:ランタイムライセンス書込み 10:52:23
+**************************************************
+ランタイムライセンス設定 開始
+
+ランタイムライセンス初期化
+Send : TS,0FA0,0
+Recv : OK,1FA0,0
+
+ランタイムライセンス登録
+Send : TS,0FB0,6,EtherCatMain,1,Motion,1,Pid,1
+Recv : OK,1FB0,0
+
+ランタイムライセンス有効化
+Send : TS,0FC0,0
+Recv : OK,1FC0,0
+ランタイムライセンス設定 OK
+
+IC2:TPMテスト 10:54:26
+**************************************************
+
+TPM初期化 開始
+Send : TS,0F90,0
+Recv : OK,1F90,0
+TPM初期化 OK
+
+I04:FPGAテスト 10:54:28
+**************************************************
+FPGA Revision テスト開始
+Send : TS,0D80,1,9
+Recv : OK,1D80,0
+FPGA Revision テスト OK
+
+FPGA ModuleID テスト開始
+Send : TS,0DB0,1,0
+Recv : OK,1DB0,0
+FPGA ModuleID テスト OK
+
+FPGAテスト OK
+
+IA4:Mac Address Port0 10:54:34
+**************************************************
+MacAddress1 : 000064BE619D
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 10:54:36
+**************************************************
+MacAddress2 : 000064BE619E
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 10:54:41
+**************************************************
+MacAddress3 : 000064BE619F
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 10:54:45
+**************************************************
+MacAddress4 : 000064BE61A0
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 10:54:47
+**************************************************
+MacAddress5 : 000064BE61A1
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB1:Flash Memoryへの書込み 10:54:49
+**************************************************
+Flash Memoryへの書込み NG
+
+I11:MRAM初期化 10:58:54
+**************************************************
+
+MRAM初期化開始
+Send : TS,0330,0
+MRAM初期化 NG
+
+I11:MRAM初期化 10:59:46
+**************************************************
+
+MRAM初期化開始
+Send : TS,0330,0
+MRAM初期化 NG
+
+I97:ﾕﾆｯﾄ電源OFF&ON 11:00:33
+**************************************************
+検査ユニット電源遮断OK
+約5秒 Wait
+検査ユニットOK
+モジュール起動まで約22秒 Wait
+検査ユニット電源投入OK
+
+I11:MRAM初期化 11:01:18
+**************************************************
+
+MRAM初期化開始
+Send : TS,0330,0
+MRAM初期化 NG
+
+I97:ﾕﾆｯﾄ電源OFF&ON 11:02:40
+**************************************************
+検査ユニット電源遮断OK
+約5秒 Wait
+検査ユニットOK
+モジュール起動まで約22秒 Wait
+検査ユニット電源投入OK
+
+I12:MRAMテスト 11:03:28
+**************************************************
+
+MRAMテスト-Write開始
+Send : TS,0310,0
+MRAMテスト NG
+
+I97:ﾕﾆｯﾄ電源OFF&ON 11:04:20
+**************************************************
+検査ユニット電源遮断OK
+約5秒 Wait
+検査ユニットOK
+モジュール起動まで約22秒 Wait
+検査ユニット電源投入OK
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : STOP
+Memo             : 強制終了
+Inspection Time  : 00:09:36

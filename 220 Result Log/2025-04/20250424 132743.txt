@@ -1,0 +1,79 @@
+2025-04-24 13:27:43.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-04-24 13:27:43
+Temperature       : 25.4 degC
+Humidity          : 37.5 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N-BAT.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 13:27:43
+**************************************************
+ 検査準備　異常
+
+I16:ライトプロテクトテスト(SDメモリカードテスト) 13:28:02
+**************************************************
+
+ライトプロテクトテスト開始
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+バススピードテスト: clock:		50000000 Hz
+actual clock:	50000000 Hz
+vdd:		21 (3.3 ~ 3.4 V)
+bus mode:	2 (push-pull)
+chip select:	0 (don't care)
+power mode:	2 (on)
+bus width:	2 (4 bits)
+timing spec:	7 (sd uhs DDR50)
+signal voltage:	1 (1.80 V)
+driver type:	0 (driver type B)
+
+バススピードテスト OK 
+ライトプロテクトテスト 状態: 1
+ライトプロテクト OK : Write 不可能
+ライトプロテクトテスト NG
+
+I16:ライトプロテクトテスト(SDメモリカードテスト) 13:31:15
+**************************************************
+
+ライトプロテクトテスト開始
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+ライトプロテクトテスト 状態: 0
+ライトプロテクト 異常 : Write 可能
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : ライトプロテクト 異常 : Write 可能
+Inspection Time  : 00:05:01
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

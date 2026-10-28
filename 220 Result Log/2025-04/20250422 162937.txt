@@ -1,0 +1,97 @@
+2025-04-22 16:29:37.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-04-22 16:29:37
+Temperature       : 24.8 degC
+Humidity          : 58.3 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N-BAT.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 16:29:38
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 16:29:39
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+
+DP LEDテスト開始
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+I04:FPGAテスト 16:42:04
+**************************************************
+
+I04:FPGAテスト 16:44:54
+**************************************************
+DB読み込み失敗
+
+I04:FPGAテスト 16:47:57
+**************************************************
+FPGA Revision テスト開始
+Send : TS,0D80,1,9
+Recv : OK,1D80,0
+Recv : NG,8D80,9
+判定基準 :OK,1D80,0
+FPGAテスト : NG,8D80,9  異常
+
+I04:FPGAテスト 16:50:11
+**************************************************
+FPGA Revision テスト開始
+Send : TS,0D80,1,9
+Recv : OK,1D80,0
+FPGA Revision テスト OK
+
+FPGA ModuleID テスト開始
+Send : TS,0DB0,1,0
+Recv : NG,8DB0,0
+判定基準 :OK,1DB0,0
+FPGAテスト : NG,8DB0,0  異常
+
+IA1:eMMC Download 17:12:47
+**************************************************
+
+eMMC Download開始
+Send : TS,0F30,0
+Download 360s Wait
+eMMC Download NG
+
+IA1:eMMC Download 17:19:10
+**************************************************
+
+eMMC Download開始
+Send : TS,0F30,0
+Download 360s Wait
+判定基準 : OK,1F30,0
+eMMC Download : OK,1F30,0  異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : eMMC Download : OK.1F30.0  異常
+Inspection Time  : 00:22:20
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

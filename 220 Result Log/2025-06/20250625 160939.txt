@@ -1,0 +1,45 @@
+2025-06-25 16:09:39.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-06-25 16:09:39
+Temperature       : 25.1 degC
+Humidity          : 65.6 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : AUT
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : T12622700
+O-I-C       : 2010603355-000010-0001
+QIC Request : 0
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 16:09:46
+**************************************************
+検査準備OK
+
+I94:Result Log Save 16:09:50
+**************************************************
+
+■ Inspection End
+**************************************************
+Result           : PASS
+Memo             : 
+Inspection Time  : 00:00:08
+
+PASS：検査合格=========
+=======================

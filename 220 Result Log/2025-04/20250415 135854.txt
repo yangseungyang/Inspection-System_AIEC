@@ -1,0 +1,60 @@
+2025-04-15 13:58:54.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-04-15 13:58:54
+Temperature       : 24.2 degC
+Humidity          : 29.9 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N-BAT.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 13:58:54
+**************************************************
+ 検査準備　異常
+
+I97:ﾕﾆｯﾄ電源OFF&ON 13:59:02
+**************************************************
+検査ユニット電源遮断OK
+約5秒 Wait
+検査ユニットOK
+モジュール起動まで約22秒 Wait
+検査ユニット電源投入OK
+
+IA1:eMMC Download 13:59:43
+**************************************************
+eMMC Download NG
+
+IA1:eMMC Download 13:59:49
+**************************************************
+eMMC Download NG
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : eMMC Download NG
+Inspection Time  : 00:00:33
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

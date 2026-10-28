@@ -1,0 +1,88 @@
+;
+; GUsbDrv setup INF file ver 1.0
+;	                           PSL
+;
+;
+;
+[Version]
+Signature="$CHICAGO$"
+Class=GUsbDrv
+;ClassGUID={FE834BDB-8F44-4086-9EA6-54DEC64F5166}
+ClassGUID={DF782668-72AB-423f-8DA1-C400B1FF1067}
+provider=%PSL%
+DriverVer=03/27/2007,1.0.0.2
+
+[ClassInstall]
+Addreg=USBClassReg
+
+[ClassInstall32]
+Addreg=USBClassReg
+
+[USBClassReg]
+HKR,,,,%GUsbDrvClassName%
+HKR,,Icon,,-20
+
+[Manufacturer]
+%MfgName%=PSL
+
+[PSL]
+;新しいデバイスを追加する場合はこの下に追加するデバイスの
+;Vendor ID,Product IDを調べ例にならって記述する。複数行記述可。
+;これに対応して[Strings]セクションも変更すること
+;
+;例
+;   %USB\VID_0627&PID_0002.DeviceDesc%=GUsbDrv.Dev, USB\VID_0627&PID_0002
+;            ~~~~     ~~~~                                ~~~~     ~~~~
+%USB\VID_0B21&PID_0021.DeviceDesc%=GUsbDrv.Dev, USB\VID_0B21&PID_0021      ; 汎用BULK I/Fデバイス
+
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+GUsbDrv.Files.Ext = 10,System32\Drivers
+GUsbDrv.Files.Inf = 10,INF
+
+[GUsbDrv.Dev]
+CopyFiles=GUsbDrv.Files.Ext, GUsbDrv.Files.Inf
+AddReg=GUsbDrv.AddReg
+
+[GUsbDrv.Dev.NT]
+CopyFiles=GUsbDrv.Files.Ext, GUsbDrv.Files.Inf
+AddReg=GUsbDrv.AddReg
+
+[GUsbDrv.Dev.NT.Services]
+Addservice = GUsbDrv, 0x00000002, GUsbDrv.AddService
+
+[GUsbDrv.AddService]
+DisplayName    = %GUsbDrv.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\GUsbDrv.sys
+LoadOrderGroup = Base
+
+[GUsbDrv.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,GUsbDrv.sys
+
+[GUsbDrv.Files.Ext]
+GUsbDrv.sys
+
+[GUsbDrv.Files.Inf]
+GUsbDrv.Inf
+
+;---------------------------------------------------------------;
+
+[Strings]
+PSL="PSL"
+MfgName="PSL"
+GUsbDrv.SvcDesc="Win FAM3-USB Driver"
+GUsbDrvClassName="FAM3-USB Driver"
+
+;
+;デバイスを追加したら、ここにそのデバイスの名前を記述すること
+;例
+; USB\VID_0627&PID_0002.DeviceDesc="Universal USB Driver (Mouse)"
+;
+USB\VID_0B21&PID_0021.DeviceDesc="Win FAM3-USB Driver (M Command)"        ; 汎用BULK I/Fデバイス

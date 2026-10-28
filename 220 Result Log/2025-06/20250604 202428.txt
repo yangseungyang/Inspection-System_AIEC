@@ -1,0 +1,121 @@
+2025-06-04 20:24:28.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-06-04 20:24:28
+Temperature       : 25.3 degC
+Humidity          : 45.7 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : AUT
+Inspection Model  : A8HCA-11-0N/NBT
+Inspection File   : A8HCA-11-0N-NBT.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N/NBT
+XJ-No       : 
+Serial No   : T12438245
+O-I-C       : 2010527557-000010-0005
+QIC Request : 0
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 20:24:29
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 20:24:38
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA4:Mac Address Port0 20:25:12
+**************************************************
+MacAddress.mdbにT12438245で登録したAddress再使用
+MacAddress1 : 000064BE6114
+
+IA5:Mac Address Port1 20:25:14
+**************************************************
+MacAddress.mdbにT12438245で登録したAddress再使用
+MacAddress2 : 000064BE6115
+
+IA6:Mac Address Port2 20:25:15
+**************************************************
+MacAddress.mdbにT12438245で登録したAddress再使用
+MacAddress3 : 000064BE6116
+
+IA7:Mac Address Port3 20:25:16
+**************************************************
+MacAddress.mdbにT12438245で登録したAddress再使用
+MacAddress4 : 000064BE6117
+
+IA8:Mac Address Port4 20:25:17
+**************************************************
+MacAddress.mdbにT12438245で登録したAddress再使用
+MacAddress5 : 000064BE6118
+
+IB2:Mac Address書込み 20:25:18
+**************************************************
+MAC Address1:000064BE6114
+MAC Address2:000064BE6115
+MAC Address3:000064BE6116
+MAC Address4:000064BE6117
+MAC Address5:000064BE6118
+
+MAC1書込み ============ 20:25:20
+Send : TS,0130,2,6,000064BE6114
+Recv : OK,1130,000064BE6114
+
+MAC2書込み ============ 20:25:22
+Send : TS,0130,2,7,000064BE6115
+Recv : OK,1130,000064BE6115
+
+MAC3書込み ============ 20:25:25
+Send : TS,0130,2,8,000064BE6116
+Recv : OK,1130,000064BE6116
+
+MAC4書込み ============ 20:25:30
+Send : TS,0130,2,9,000064BE6117
+Recv : OK,1130,000064BE6117
+
+MAC5書込み ============ 20:25:33
+Send : TS,0130,2,A,000064BE6118
+Recv : OK,1130,000064BE6118
+
+IA9: MACアドレス 重複確認 20:25:36
+**************************************************
+MacAddress は1つ登録確認OK
+MacAddress1 は1つ登録確認OK
+MacAddress2 は1つ登録確認OK
+MacAddress3 は1つ登録確認OK
+MacAddress4 は1つ登録確認OK
+
+IB1:Flash Memoryへの書込み 20:25:38
+**************************************************
+
+モジュール形名書込み開始
+Send : TS,0130,2,1,A8HCA-11-0N/NBT
+Recv : OK,1130,A8HCA-11-0N/NBT
+書き込み値=A8HCA-11-0N/NBT, 読み込み値=A8HCA-11-0N/NBT)
+モジュール形名書込み OK
+
+シリアル番号書込み : OK,1130,A8HCA-11-0N/NBT  異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : シリアル番号書込み : OK.1130.A8HCA-11-0N/NBT  異常
+Inspection Time  : 00:04:21
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

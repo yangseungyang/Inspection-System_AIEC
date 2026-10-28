@@ -1,0 +1,67 @@
+2025-08-12 09:22:09.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.07.24  System Rev. : 0.01
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-08-12 09:22:09
+Temperature       : 25.1 degC
+Humidity          : 66.1 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N/STN
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N/STN
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 09:22:11
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 09:22:15
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+I30:RTC設定 09:22:57
+**************************************************
+RTC TimeZone : JST/KST
+月は0始まり、曜日は日曜が0
+RTC設定時刻：2,5,0,8,1,2,2,0,9,2,2,5,7
+Send : TS,0610,D,2,5,0,8,1,2,2,0,9,2,2,5,7
+Recv : OK,1610,2,5,0,8,1,2,2,0,9,2,2,5,7　正常
+RTCSetDate:25/08/12
+RTCSetWeek:2
+RTCSetWeekは曜日 : 火曜日
+RTCSetTime:09:22:57
+I30:RTC設定 正常
+
+I97:ﾕﾆｯﾄ電源OFF&ON 09:23:02
+**************************************************
+検査ユニット電源遮断OK
+約5秒 Wait
+検査ユニットOK
+モジュール起動まで約22秒 Wait
+検査ユニット電源投入OK
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : STOP
+Memo             : 強制終了
+Inspection Time  : 00:01:21

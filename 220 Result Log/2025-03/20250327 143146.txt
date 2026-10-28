@@ -1,0 +1,104 @@
+2025-03-27 14:31:46.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-03-27 14:31:46
+Temperature       : 25.9 degC
+Humidity          : 41.5 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA _Test_Only.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I90:ﾕﾆｯﾄ電源ON 14:31:46
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA4:Mac Address Port0 14:32:20
+**************************************************
+MacAddress1 : 000064BE6112
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 14:33:56
+**************************************************
+MacAddress2 : 000064BE6113
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 14:34:05
+**************************************************
+MacAddress3 : 000064BE6114
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 14:34:15
+**************************************************
+MacAddress4 : 000064BE6115
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 14:34:31
+**************************************************
+MacAddress5 : 000064BE6116
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB2:Mac Address書込み 14:34:59
+**************************************************
+MAC Address1:00:00:64:BE:61:12
+MAC Address2:00:00:64:BE:61:13
+MAC Address3:00:00:64:BE:61:14
+MAC Address4:00:00:64:BE:61:15
+MAC Address5:00:00:64:BE:61:16
+
+MAC1書込み ============ 14:35:55
+Send : TS,0130,2,6,00:00:64:BE:61:12
+Recv : OK,1130,00:00:64:BE:61:12
+
+MAC2書込み ============ 14:36:02
+Send : TS,0130,2,7,00:00:64:BE:61:13
+Recv : OK,1130,00:00:64:BE:61:13
+
+MAC3書込み ============ 14:36:06
+Send : TS,0130,2,8,00:00:64:BE:61:14
+Recv : OK,1130,00:00:64:BE:61:14
+
+MAC4書込み ============ 14:36:07
+Send : TS,0130,2,9,00:00:64:BE:61:15
+Recv : OK,1130,00:00:64:BE:61:15
+
+MAC5書込み ============ 14:36:07
+Send : TS,0130,2,A,00:00:64:BE:61:16
+Recv : OK,1130,00:00:64:BE:61:16
+MAC6書込み　異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : MAC6書込み　異常
+Inspection Time  : 00:10:53
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

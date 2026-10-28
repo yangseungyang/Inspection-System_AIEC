@@ -1,0 +1,88 @@
+2025-05-29 13:23:48.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-05-29 13:23:48
+Temperature       : 25.0 degC
+Humidity          : 50.8 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 13:23:48
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 13:24:02
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+IA4:Mac Address Port0 13:24:42
+**************************************************
+MacAddress1 : 000064BE6184
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 13:24:47
+**************************************************
+MacAddress2 : 000064BE6185
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 13:24:51
+**************************************************
+MacAddress3 : 000064BE6186
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 13:24:55
+**************************************************
+MacAddress4 : 000064BE6187
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 13:24:59
+**************************************************
+MacAddress5 : 000064BE6188
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB2:Mac Address書込み 13:25:02
+**************************************************
+MAC Address1:000064BE6184
+MAC Address2:000064BE6185
+MAC Address3:000064BE6186
+MAC Address4:000064BE6187
+MAC Address5:000064BE6188
+Mac Address書込み NG
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : Mac Address書込み NG
+Inspection Time  : 00:05:01
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

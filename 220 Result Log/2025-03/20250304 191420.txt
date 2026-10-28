@@ -1,0 +1,75 @@
+2025-03-04 19:14:20.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.02.26  System Rev. : 0.00
+System No.  : B0
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-03-04 19:14:20
+Temperature       : 21.5 degC
+Humidity          : 42.9 %
+Operator          : Kwang Nim Im
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N
+Inspection File   : A8HCA _Test_Only.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 19:14:21
+**************************************************
+検査準備OK
+
+I10:電圧確認テスト 19:14:26
+**************************************************
+
+5.2V 電源電圧 測定 =========
+Send : TS,0900,2,5DB4,7287
+Recv : OK, 1900 6BF7
+SPEC : 4.500 V ≦ 測定直 ≦ 5.500 V
+測定直   : 5.185
+判定基準 : 4.500 V ≦ 測定直 ≦ 5.500 V
+ パス 'C:\標準化検査装置\Inspection System\210 Result Data\A8HCAXData' の一部が見つかりませんでした。
+
+I10:電圧確認テスト 19:28:22
+**************************************************
+
+5.2V 電源電圧 測定 =========
+Send : TS,0900,2,5DB4,7287
+Recv : OK, 1900 6BF7
+SPEC : 4.500 V ≦ 測定直 ≦ 5.500 V
+測定直   : 5.185
+判定基準 : 4.500 V ≦ 測定直 ≦ 5.500 V
+ パス 'C:\標準化検査装置\Inspection System\210 Result Data\A8HCAXData' の一部が見つかりませんでした。
+
+I10:電圧確認テスト 19:31:22
+**************************************************
+
+5.2V 電源電圧 測定 =========
+Send : TS,0900,2,5DB4,7287
+Recv : OK, 1900 6BF7
+SPEC : 4.500 V ≦ 測定直 ≦ 5.500 V
+測定直   : 5.185
+判定基準 : 4.500 V ≦ 測定直 ≦ 5.500 V
+ パス 'C:\標準化検査装置\Inspection System\210 Result Data\A8HCAXData' の一部が見つかりませんでした。
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             :  パス -C:\標準化検査装置\Inspection System\210 Result Data\A8HCAXData- の一部が見つかりませんでした。
+Inspection Time  : 00:18:26
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

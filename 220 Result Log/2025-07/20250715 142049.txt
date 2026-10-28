@@ -1,0 +1,226 @@
+2025-07-15 14:20:49.txt
+
+■ System information
+**************************************************
+System Name : A8 ATE B号機
+System Date : 2025.05.19  System Rev. : 0.00
+System No.  : B
+
+■ Inspection condition
+**************************************************
+Start Date & Time : 2025-07-15 14:20:49
+Temperature       : 25.0 degC
+Humidity          : 64.2 %
+Operator          : KYUNG MI LEE
+Approver          : ---
+Run Mode          : MAN
+Inspection Model  : A8HCA-11-0N/STN
+Inspection File   : A8HCA-11-0N.mdb
+
+■ Order Information
+**************************************************
+MS-CODE     : A8HCA-11-0N/STN
+XJ-No       : 
+Serial No   : 
+O-I-C       : --
+QIC Request : 
+
+■ Inspection
+**************************************************
+
+I92:検査開始準備 14:20:51
+**************************************************
+検査準備OK
+
+I90:ﾕﾆｯﾄ電源ON 14:20:55
+**************************************************
+検査ﾓｼﾞｭｰﾙ電源投入
+検査ﾓｼﾞｭｰﾙ電源投入OK
+
+I05:電源モジュールテスト 14:22:20
+**************************************************
+
+XPFAILテスト開始
+Send : TS,0A10,1,0
+Recv : OK,1A10,0
+Send : TS,0A10,1,1
+Recv : NG,8A10,0
+電源モジュールテスト : NG,8A10,0  異常
+
+I05:電源モジュールテスト 14:28:15
+**************************************************
+
+XDFAILテスト開始
+
+XPFAILテスト開始
+Send : TS,0A10,1,0
+Recv : OK,1A10,0
+Send : TS,0A10,1,1
+Recv : NG,8A10,0
+Send : TS,0A10,1,0
+Send : TS,0A10,1,0
+Recv : OK,1A10,0
+Send : TS,0A10,1,1
+Recv : NG,8A10,0
+電源モジュールテスト : NG,8A10,0  異常
+
+I04:FPGAテスト 14:35:09
+**************************************************
+FPGA Revision テスト開始
+Send : TS,0D80,1,9
+Recv : OK,1D80,0
+FPGA Revision テスト OK
+
+FPGA ModuleID テスト開始
+Send : TS,0DB0,1,
+Recv : OK,1DB0,0
+FPGA ModuleID テスト OK
+
+FPGAテスト OK
+
+IA4:Mac Address Port0 14:35:21
+**************************************************
+MacAddress1 : 000064BE61A2
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA5:Mac Address Port1 14:35:24
+**************************************************
+MacAddress2 : 000064BE61A3
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA6:Mac Address Port2 14:35:26
+**************************************************
+MacAddress3 : 000064BE61A4
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA7:Mac Address Port3 14:35:27
+**************************************************
+MacAddress4 : 000064BE61A5
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IA8:Mac Address Port4 14:35:31
+**************************************************
+MacAddress5 : 000064BE61A6
+Next MAC ADDRESS ･･･
+Next MAC ADDRESS OK!
+
+IB1:Flash Memoryへの書込み 14:35:34
+**************************************************
+
+モジュール形名書込み開始
+Send : TS,0130,2,1,A8HCA-11-0N/STN
+Recv : OK,1130,A8HCA-11-0N/STN
+書き込み値=A8HCA-11-0N/STN, 読み込み値=A8HCA-11-0N/STN)
+モジュール形名書込み OK
+
+
+シリアル番号設定開始
+Send : TS,0130,2,2,
+Recv : OK,1130
+シリアル番号書込み : OK,1130  異常
+
+IB2:Mac Address書込み 14:35:47
+**************************************************
+MAC Address1:000064BE61A2
+MAC Address2:000064BE61A3
+MAC Address3:000064BE61A4
+MAC Address4:000064BE61A5
+MAC Address5:000064BE61A6
+
+MAC1書込み ============ 14:35:47
+Send : TS,0130,2,6,000064BE61A2
+Recv : NG,8130
+MAC1書込み　異常
+
+IB1:Flash Memoryへの書込み 14:36:10
+**************************************************
+
+モジュール形名書込み開始
+Send : TS,0130,2,1,A8HCA-11-0N/STN
+Recv : OK,1130,A8HCA-11-0N/STN
+書き込み値=A8HCA-11-0N/STN, 読み込み値=A8HCA-11-0N/STN)
+モジュール形名書込み OK
+
+
+シリアル番号設定開始
+Send : TS,0130,2,2,T12345678
+Recv : OK,1130,T12345678
+書き込み値=T12345678, 読み込み値=T12345678)
+シリアル番号書込み OK
+
+
+リリースナンバ書込み開始
+Send : TS,0130,2,3,R1.00.01
+Recv : OK,1130,R1.00.01
+書き込み値=R1.00.01, 読み込み値=R1.00.01)
+リリースナンバ書込み OK
+
+
+カレントナンバ書込み開始
+Send : TS,0130,2,4,R1.00.01
+Recv : OK,1130,R1.00.01
+書き込み値=R1.00.01, 読み込み値=R1.00.01)
+カレントナンバ書込み OK
+
+
+スタイルナンバ書込み開始
+Send : TS,0130,2,5,S0.01
+Recv : OK,1130,S0.01
+書き込み値=S0.01, 読み込み値=S0.01)
+スタイルナンバ書込み OK
+
+Flash Memoryへの書込み OK
+
+IB2:Mac Address書込み 14:37:17
+**************************************************
+MAC Address1:000064BE61A2
+MAC Address2:000064BE61A3
+MAC Address3:000064BE61A4
+MAC Address4:000064BE61A5
+MAC Address5:000064BE61A6
+
+MAC1書込み ============ 14:37:17
+Send : TS,0130,2,6,000064BE61A2
+Recv : NG,8130
+MAC1書込み　異常
+
+IB2:Mac Address書込み 14:37:52
+**************************************************
+MAC Address1:000064BE61A2
+MAC Address2:000064BE61A3
+MAC Address3:000064BE61A4
+MAC Address4:000064BE61A5
+MAC Address5:000064BE61A6
+
+MAC1書込み ============ 14:37:52
+Send : TS,0130,2,6,000064BE61A2
+Recv : NG,8130
+MAC1書込み　異常
+
+IB2:Mac Address書込み 14:38:11
+**************************************************
+MAC Address1:000064BE61A2
+MAC Address2:000064BE61A3
+MAC Address3:000064BE61A4
+MAC Address4:000064BE61A5
+MAC Address5:000064BE61A6
+
+MAC1書込み ============ 14:38:13
+Send : TS,0130,2,6,000064BE61A2
+Recv : NG,8130
+MAC1書込み　異常
+検査ﾓｼﾞｭｰﾙ電源遮断
+検査ﾓｼﾞｭｰﾙ電源遮断OK
+
+■ Inspection End
+**************************************************
+Result           : NG
+Memo             : MAC1書込み　異常
+Inspection Time  : 00:11:32
+
+× 検査不合格 ===================================
+　①リーダを呼んで下さい

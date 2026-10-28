@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C84CDF6B-A5A6-4E42-AAFE-0457AB8AC35F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Inspection_System.My.MyApplication</StartupObject>
+    <RootNamespace>Inspection_System</RootNamespace>
+    <AssemblyName>Inspection System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Inspection System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Inspection System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonCommunicationLibrary, Version=1.0.2720.18046, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\810 DLL\CommonCommunicationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBarcode, Version=2.4.2480.34660, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\810 DLL\DotNetBarcode.dll</HintPath>
+    </Reference>
+    <Reference Include="EtherComN, Version=0.3.5.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\SysWOW64\EtherComN.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.COMCTRLEXLib, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>obj\Debug\Interop.COMCTRLEXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common, Version=19.0.40.49152, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\810 DLL\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.FieldBus, Version=3.2.0.4005, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\810 DLL\NationalInstruments.FieldBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.NI4882, Version=13.0.45.161, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\810 DLL\NationalInstruments.NI4882.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2024.2.0.1, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2024.2.0\lib\net462\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.1\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TmctlAPINet64">
+      <HintPath>..\..\..\..\Windows\SysWOW64\TmctlAPINet64.dll</HintPath>
+    </Reference>
+    <Reference Include="ToY_StopWatch, Version=1.0.3251.30071, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ToY_StopWatch\cntStopWatch\bin\Release\ToY_StopWatch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01 Form\frm001_Main.designer.vb">
+      <DependentUpon>frm001_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm001_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm010_OrderInput.Designer.vb">
+      <DependentUpon>frm010_OrderInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm010_OrderInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm020_InspectionStartEnd.designer.vb">
+      <DependentUpon>frm020_InspectionStartEnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm020_InspectionStartEnd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm030_InspectionInformation.designer.vb">
+      <DependentUpon>frm030_InspectionInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm030_InspectionInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm100_EquipmentCondition.Designer.vb">
+      <DependentUpon>frm100_EquipmentCondition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm100_EquipmentCondition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm101_EquipmentSetting.Designer.vb">
+      <DependentUpon>frm101_EquipmentSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm101_EquipmentSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm110_Result.Designer.vb">
+      <DependentUpon>frm110_Result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm110_Result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm120_SelfCheck.Designer.vb">
+      <DependentUpon>frm120_SelfCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm120_SelfCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm130_ManualOperation.Designer.vb">
+      <DependentUpon>frm130_ManualOperation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm130_ManualOperation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm131_ManualDetails.Designer.vb">
+      <DependentUpon>frm131_ManualDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm131_ManualDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm140_MaintenanceMenu.Designer.vb">
+      <DependentUpon>frm140_MaintenanceMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm140_MaintenanceMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm150_SystemInformation.Designer.vb">
+      <DependentUpon>frm150_SystemInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm150_SystemInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm200_InputPass.Designer.vb">
+      <DependentUpon>frm200_InputPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm200_InputPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm201_DispWait.Designer.vb">
+      <DependentUpon>frm201_DispWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm201_DispWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm500_MessagePopUp.Designer.vb">
+      <DependentUpon>frm500_MessagePopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm500_MessagePopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm501_StatusDisp.Designer.vb">
+      <DependentUpon>frm501_StatusDisp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm501_StatusDisp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm510_MessagePopUp.Designer.vb">
+      <DependentUpon>frm510_MessagePopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm510_MessagePopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm600_Reprint.designer.vb">
+      <DependentUpon>frm600_Reprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm600_Reprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01 Form\frm999_MasterForm.Designer.vb">
+      <DependentUpon>frm999_MasterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01 Form\frm999_MasterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02 GeneralClass\cls001_Window_Control.vb" />
+    <Compile Include="02 GeneralClass\cls010_MDB_Operation.vb" />
+    <Compile Include="02 GeneralClass\cls011_Excel_Operation.vb" />
+    <Compile Include="02 GeneralClass\cls012_File_Operation.vb" />
+    <Compile Include="02 GeneralClass\cls013_TextFile_Operation.vb" />
+    <Compile Include="02 GeneralClass\cls020_Drive_Control.vb" />
+    <Compile Include="02 GeneralClass\clsCommMain.vb" />
+    <Compile Include="02 GeneralClass\clsNeptune.vb" />
+    <Compile Include="03 ManufacturingClass\cls030_LineSerial.vb" />
+    <Compile Include="03 ManufacturingClass\cls031_MacAddress.vb" />
+    <Compile Include="03 ManufacturingClass\cls034_LabelPrint.vb" />
+    <Compile Include="03 ManufacturingClass\cls060_PCNetSPEED.vb" />
+    <Compile Include="03 ManufacturingClass\cls080_F3LinkToLE.vb" />
+    <Compile Include="02 GeneralClass\cls090_DesignForm_Type01.vb" />
+    <Compile Include="03 ManufacturingClass\cls100_PLASMA_Order.vb" />
+    <Compile Include="03 ManufacturingClass\cls101_ComRS232C.vb" />
+    <Compile Include="03 ManufacturingClass\cls103_CommMain.vb" />
+    <Compile Include="03 ManufacturingClass\cls103_ComNIGPIB.vb" />
+    <Compile Include="03 ManufacturingClass\cls104_ComGBGPIB.vb" />
+    <Compile Include="03 ManufacturingClass\cls110_ServerConnect.vb" />
+    <Compile Include="03 ManufacturingClass\cls102_SignalTower.vb" />
+    <Compile Include="03 ManufacturingClass\cls120_SP_M_Command.vb" />
+    <Compile Include="03 ManufacturingClass\cls121_SP_TEST_MODE.vb" />
+    <Compile Include="03 ManufacturingClass\cls122_FAM3_IOBUS_Ctrl.vb" />
+    <Compile Include="03 ManufacturingClass\cls123_BUBU_IOBUS_TEST.vb" />
+    <Compile Include="03 ManufacturingClass\cls124_KP_IOBUS_TEST.vb" />
+    <Compile Include="03 ManufacturingClass\cls125_PF_IOBUS_TEST.vb" />
+    <Compile Include="03 ManufacturingClass\cls130_EI_GAZO.vb" />
+    <Compile Include="03 ManufacturingClass\cls140_VoltageMeasure.vb" />
+    <Compile Include="03 ManufacturingClass\cls126_CMD_IOBUS_TEST.vb" />
+    <Compile Include="03 ManufacturingClass\cls127_ERG_IOBUS_TEST.vb" />
+    <Compile Include="03 ManufacturingClass\cls200_BaseEquipments.vb" />
+    <Compile Include="03 ManufacturingClass\cls230_7651.vb" />
+    <Compile Include="03 ManufacturingClass\cls231_ADR_3204.vb" />
+    <Compile Include="03 ManufacturingClass\cls232_3458A.vb" />
+    <Compile Include="03 ManufacturingClass\ClsIni.vb" />
+    <Compile Include="03 ManufacturingClass\FAM3_IO_PFM_CLS.vb" />
+    <Compile Include="03 ManufacturingClass\cls240_34410A.vb" />
+    <Compile Include="03 ManufacturingClass\ssh.vb" />
+    <Compile Include="04 InspectionClass\cls2P0_Inspection.vb" />
+    <Compile Include="04 InspectionClass\cls2X0_A8HCA_inspection.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="01 Form\frm001_Main.resx">
+      <DependentUpon>frm001_Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm010_OrderInput.resx">
+      <DependentUpon>frm010_OrderInput.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm020_InspectionStartEnd.resx">
+      <DependentUpon>frm020_InspectionStartEnd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm030_InspectionInformation.resx">
+      <DependentUpon>frm030_InspectionInformation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm100_EquipmentCondition.resx">
+      <DependentUpon>frm100_EquipmentCondition.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm110_Result.resx">
+      <DependentUpon>frm110_Result.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm120_SelfCheck.resx">
+      <DependentUpon>frm120_SelfCheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm130_ManualOperation.resx">
+      <DependentUpon>frm130_ManualOperation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm140_MaintenanceMenu.resx">
+      <DependentUpon>frm140_MaintenanceMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm200_InputPass.resx">
+      <DependentUpon>frm200_InputPass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm500_MessagePopUp.resx">
+      <DependentUpon>frm500_MessagePopUp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm501_StatusDisp.resx">
+      <DependentUpon>frm501_StatusDisp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm510_MessagePopUp.resx">
+      <DependentUpon>frm510_MessagePopUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01 Form\frm600_Reprint.resx">
+      <DependentUpon>frm600_Reprint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="BARCODELib">
+      <Guid>{D9347025-9612-11D1-9D75-00C04FCC8CDC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="JRO">
+      <Guid>{AC3B8B4C-B6CA-11D1-9F31-00C04FC29D52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Scripting">
+      <Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\BlueLabel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YellowLabel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavyBlueLabel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackColor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackColor1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラ 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
