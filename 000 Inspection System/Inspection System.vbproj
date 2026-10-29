@@ -78,7 +78,8 @@
     <Reference Include="Interop.COMCTRLEXLib, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>obj\Debug\Interop.COMCTRLEXLib.dll</HintPath>
+      <!--<HintPath>obj\Debug\Interop.COMCTRLEXLib.dll</HintPath>  Ver0.05 YSH DEL : obj 는 .gitignore 대상이라 git 에 없음-->
+      <HintPath>..\810 DLL\Interop.COMCTRLEXLib.dll</HintPath>  <!--Ver0.05 YSH ADD : 저장소 810 DLL (원본 obj\Debug 의 1.3.0.0 그대로)-->
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -278,6 +279,7 @@
     <Compile Include="02 GeneralClass\cls020_Drive_Control.vb" />
     <Compile Include="02 GeneralClass\clsCommMain.vb" />
     <Compile Include="02 GeneralClass\clsNeptune.vb" />
+    <Compile Include="02 GeneralClass\clsRouterLink.vb" />
     <Compile Include="03 ManufacturingClass\cls030_LineSerial.vb" />
     <Compile Include="03 ManufacturingClass\cls031_MacAddress.vb" />
     <Compile Include="03 ManufacturingClass\cls034_LabelPrint.vb" />

@@ -11,7 +11,8 @@ Public Class frm001_Main
     'Private Const Version As String = "0.01" 'Ver 0.01 HSJ ADD
     'Private Const Version As String = "0.02" 'Ver 0.02 HSJ ADD
     'Private Const Version As String = "0.03" 'Ver 0.03 HSJ ADD
-    Private Const Version As String = "0.04" 'Ver 0.04 HSJ ADD
+    'Private Const Version As String = "0.04" 'Ver 0.04 HSJ ADD     'Ver0.05 YSH DEL
+    Private Const Version As String = "0.05" 'Ver0.05 YSH ADD : Barcode_Router 연동 (END 회신) / md Rev 2 6-9, 7-11, SystemSetting.mdb 0.05 레코드 추가
 
     Private EtherComNDll As New EtherComN.Dll
 
@@ -128,6 +129,8 @@ Public Class frm001_Main
         End Try
 
         cBcd.PortSetup()
+
+        Call clsRouterLink.SendEnd(Me.SerialPort1, mSystemLog)     'Ver0.05 YSH ADD : Barcode_Router 로 검사 종료(END) 회신. EquipmentSetting.mdb RouterLink = Yes 일 때만 (md Rev 7 11-7 P3)
 
         RemoveHandler txtBarcode(0).TextChanged, AddressOf txtBarcode_TextChanged
 
